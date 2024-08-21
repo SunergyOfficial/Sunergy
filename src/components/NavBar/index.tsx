@@ -25,7 +25,7 @@ const pages = [
   { name: "講師", href: "/Lecturer" },
   { name: "開班資訊", href: "/Class" },
 ];
-const pages_m = [...pages, { name: "聯絡我們", href: "/Contact" }];
+const pages_m = [...pages, { name: "線上諮詢", href: "/Contact" }];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -65,6 +65,7 @@ function NavBar() {
       color: pathName === href ? "black" : "#AAA",
       display: "block",
       textTransform: "none",
+      textAlign: "center",
       fontFamily: inter.style.fontFamily,
       fontWeight: 600,
       fontSize: "18px",
@@ -137,16 +138,21 @@ function NavBar() {
                 href="/Contact"
                 sx={{
                   my: 2,
-                  color: "black",
+                  color: "white",
                   display: "block",
-                  textTransform: "none",
+                  backgroundColor: "black",
                   fontFamily: inter.style.fontFamily,
                   fontWeight: 600,
                   fontSize: "18px",
+                  borderRadius: "30px",
+                  paddingX: 5,
+                  paddingY: 1,
+                  "&:hover": {
+                    backgroundColor: "grey",
+                  },
                 }}
-                className="gradient-border"
               >
-                聯絡我們
+                線上諮詢
               </Button>
             )}
           </Box>
@@ -158,7 +164,7 @@ function NavBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="primary"
             >
               <MenuIcon />
             </IconButton>
