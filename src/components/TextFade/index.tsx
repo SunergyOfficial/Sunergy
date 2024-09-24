@@ -77,7 +77,7 @@ export default function TextFade({
           sx={{
             position: "relative",
             width: "100%",
-            height: "300px",
+            height: "200px",
             marginTop: 5,
             display: "flex",
             justifyContent: "center",

@@ -92,7 +92,6 @@ export default function Banner() {
                   fontFamily: inter.style.fontFamily,
                   fontSize: { xs: "30px", md: "40px" },
                   textAlign: "center",
-
                   mb: 2,
                   px: 2,
                 }}
