@@ -22,10 +22,10 @@ const PrivacyPolicy: React.FC = () => {
           Last updated August 12, 2024
         </Typography>
         <Typography variant="body1" paragraph sx={inter.style}>
-          This Cookie Policy explains how Qinvicta Inc. (&quot;Company,&quot;
+          This Cookie Policy explains how Sunergy Inc. (&quot;Company,&quot;
           &quot;we,&quot; &quot;us,&quot; and &quot;our&quot;) uses cookies and
           similar technologies to recognize you when you visit our website at
-          https://qinvicta.com (&quot;Website&quot;). It explains what these
+          https://sunergy.com (&quot;Website&quot;). It explains what these
           technologies are and why we use them, as well as your rights to
           control our use of them.
         </Typography>
@@ -44,7 +44,7 @@ const PrivacyPolicy: React.FC = () => {
           efficiently, as well as to provide reporting information.
         </Typography>
         <Typography variant="body1" paragraph sx={inter.style}>
-          Cookies set by the website owner (in this case, Qinvicta Inc.) are
+          Cookies set by the website owner (in this case, Sunergy Inc.) are
           called &quot;firstparty cookies.&quot; Cookies set by parties other
           than the website owner are called &quot;thirdparty cookies.&quot;
           Third-party cookies enable third-party features or functionality to be

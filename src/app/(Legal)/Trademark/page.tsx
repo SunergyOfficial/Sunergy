@@ -25,27 +25,27 @@ const TrademarkLegal: React.FC = () => {
         <Typography variant="body1" paragraph sx={inter.style}>
           This Trademark Legal Notice provides information regarding the
           trademarks, service marks, and trade names owned or licensed by
-          Qinvicta Inc. (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot;
-          and &quot;our&quot;) that are used on our website located at
-          https://qinvicta.com (&quot;Website&quot;). The use of these
-          trademarks is governed by the terms set forth below.
+          Sunergy Inc. (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; and
+          &quot;our&quot;) that are used on our website located at
+          https://sunergy.com (&quot;Website&quot;). The use of these trademarks
+          is governed by the terms set forth below.
         </Typography>
         <Typography variant="h5" sx={{ ...inter.style, mt: 4 }} gutterBottom>
           Ownership of Trademarks
         </Typography>
         <Typography variant="body1" paragraph sx={inter.style}>
           The trademarks, service marks, and trade names displayed on the
-          Website, including but not limited to Qinvicta Inc., the Qinvicta
-          logo, and any associated brand names, are registered and unregistered
-          trademarks of Qinvicta Inc. These trademarks are protected by
-          trademark laws and other intellectual property laws.
+          Website, including but not limited to Sunergy Inc., the Sunergy logo,
+          and any associated brand names, are registered and unregistered
+          trademarks of Sunergy Inc. These trademarks are protected by trademark
+          laws and other intellectual property laws.
         </Typography>
         <Typography variant="h5" sx={{ ...inter.style, mt: 4 }} gutterBottom>
           Use of Trademarks
         </Typography>
         <Typography variant="body1" paragraph sx={inter.style}>
           You are not permitted to use any of our trademarks, service marks, or
-          trade names without the prior written consent of Qinvicta Inc., except
+          trade names without the prior written consent of Sunergy Inc., except
           as provided by applicable law. Unauthorized use of these trademarks
           may violate trademark laws, unfair competition laws, and other
           applicable laws.

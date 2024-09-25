@@ -23,7 +23,7 @@ const PrivacyPolicy: React.FC = () => {
           Last updated August 12, 2024
         </Typography>
         <Typography variant="body1" paragraph sx={inter.style}>
-          This privacy notice for Qinvicta Inc. (&quot;we,&quot; &quot;us,&quot;
+          This privacy notice for Sunergy Inc. (&quot;we,&quot; &quot;us,&quot;
           or &quot;our&quot;), describes how and why we might collect, store,
           use, and/or share (&quot;process&quot;) your information when you use
           our services (&quot;Services&quot;), such as when you:
@@ -32,8 +32,8 @@ const PrivacyPolicy: React.FC = () => {
           <ListItem>
             <Typography variant="body1">
               - Visit our website at
-              <Link href="/"> https://qinvicta.com</Link>, or any website of
-              ours that links to this privacy notice
+              <Link href="/"> https://sunergy.com</Link>, or any website of ours
+              that links to this privacy notice
             </Typography>
           </ListItem>
           <ListItem>
@@ -159,7 +159,7 @@ const PrivacyPolicy: React.FC = () => {
         <Typography variant="body1" paragraph sx={inter.style}>
           Like many businesses, we also collect information through cookies and
           similar technologies. You can find out more about this in our Cookie
-          Notice: <Link href="/Cookies">https://qinvicta.com/Cookies</Link>.
+          Notice: <Link href="/Cookies">https://sunergy.com/Cookies</Link>.
         </Typography>
 
         <Typography
@@ -300,7 +300,7 @@ const PrivacyPolicy: React.FC = () => {
           and pixels) to access or store information. You can learn more about
           this in our Cookie Notice:{" "}
           <Link href="/Cookies" sx={inter.style}>
-            https://qinvicta.com/Cookies
+            https://sunergy.com/Cookies
           </Link>
           .
         </Typography>

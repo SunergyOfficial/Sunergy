@@ -18,17 +18,13 @@ const inter = Inter({ subsets: ["latin"] });
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = React.useState({
     name: "",
-    company: "",
-    position: "",
-    phone: "",
+    line: "",
     email: "",
     message: "",
   });
   const [errors, setErrors] = React.useState({
     name: "",
-    company: "",
-    position: "",
-    phone: "",
+    line: "",
     email: "",
     message: "",
   });
@@ -42,9 +38,7 @@ const ContactForm: React.FC = () => {
   const validate = () => {
     const newErrors = {
       name: "",
-      company: "",
-      position: "",
-      phone: "",
+      line: "",
       email: "",
       message: "",
     };
@@ -54,21 +48,7 @@ const ContactForm: React.FC = () => {
       newErrors.name = "Name is required";
       isValid = false;
     }
-    if (!formData.company) {
-      newErrors.company = "Company is required";
-      isValid = false;
-    }
-    if (!formData.position) {
-      newErrors.position = "Position is required";
-      isValid = false;
-    }
-    if (!formData.phone) {
-      newErrors.phone = "Contact Phone is required";
-      isValid = false;
-    } else if (!/^\+?\d{10,15}$/.test(formData.phone)) {
-      newErrors.phone = "Phone number is invalid";
-      isValid = false;
-    }
+
     if (!formData.email) {
       newErrors.email = "Email is required";
       isValid = false;
@@ -112,9 +92,20 @@ const ContactForm: React.FC = () => {
           borderRadius: "8px",
         }}
       >
-        <Typography className="body_heading">Getting in Touch</Typography>
+        <Typography
+          sx={{
+            color: "#3FBBF7",
+            fontWeight: "600",
+            fontFamily: inter.style.fontFamily,
+            fontSize: { xs: "24px", md: "32px" },
+            textAlign: "left",
+            mb: 2,
+          }}
+        >
+          聯絡我們
+        </Typography>
         <Typography className="body_text">
-          Leave a message. We will contact you in no time.
+          留下資訊，我們會盡快與您聯繫
         </Typography>
         <Box
           component="form"
@@ -128,7 +119,7 @@ const ContactForm: React.FC = () => {
               <TextField
                 fullWidth
                 margin="normal"
-                label="Name"
+                label="姓名"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
@@ -137,46 +128,21 @@ const ContactForm: React.FC = () => {
                 variant="standard"
               />
             </Grid>
+
             <Grid item xs={12} md={6}>
               <TextField
                 fullWidth
                 margin="normal"
-                label="Company"
-                name="company"
-                value={formData.company}
+                label="Line 帳號 (選填)"
+                name="line"
+                value={formData.line}
                 onChange={handleChange}
-                error={!!errors.company}
-                helperText={errors.company}
-                variant="standard"
-              />
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <TextField
-                fullWidth
-                margin="normal"
-                label="Position"
-                name="position"
-                value={formData.position}
-                onChange={handleChange}
-                error={!!errors.position}
-                helperText={errors.position}
-                variant="standard"
-              />
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <TextField
-                fullWidth
-                margin="normal"
-                label="Contact Phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                error={!!errors.phone}
-                helperText={errors.phone}
+                error={!!errors.line}
+                helperText={errors.line}
                 variant="standard"
                 InputProps={{
                   startAdornment: (
-                    <InputAdornment position="start">+</InputAdornment>
+                    <InputAdornment position="start"></InputAdornment>
                   ),
                 }}
               />
@@ -185,7 +151,7 @@ const ContactForm: React.FC = () => {
               <TextField
                 fullWidth
                 margin="normal"
-                label="Email"
+                label="電子信箱"
                 name="email"
                 type="email"
                 value={formData.email}
@@ -199,7 +165,7 @@ const ContactForm: React.FC = () => {
               <TextField
                 fullWidth
                 margin="normal"
-                label="Message"
+                label="訊息或疑問"
                 name="message"
                 multiline
                 rows={6}
@@ -229,11 +195,11 @@ const ContactForm: React.FC = () => {
                 textTransform: "none",
                 fontFamily: inter.style.fontFamily,
                 fontWeight: 500,
-                fontSize: "18px",
+                fontSize: "16px",
               }}
               className="gradient-border-submit"
             >
-              Submit
+              送出
             </Button>
             {submitted && (
               <Typography
@@ -242,7 +208,7 @@ const ContactForm: React.FC = () => {
                 sx={{ mt: 2 }}
                 textAlign="center"
               >
-                Thank you for your message!
+                謝謝您的訊息！
               </Typography>
             )}
           </Box>

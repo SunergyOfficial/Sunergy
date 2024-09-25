@@ -29,7 +29,7 @@ function Footer() {
   return (
     <AppBar
       sx={{
-        backgroundColor: "#0A113B",
+        backgroundColor: "#f5f5f5",
         position: "static",
         width: "100%", // Ensure the AppBar spans the full width
       }}
@@ -52,7 +52,7 @@ function Footer() {
             }}
           >
             <Image
-              src="/Logo_V_DB.png"
+              src="/Logo_HQ.png"
               alt="Logo"
               width={250}
               height={150}
@@ -73,7 +73,7 @@ function Footer() {
               alignItems: "center",
             }}
           >
-            {pages.map((page) => (
+            {/*pages.map((page) => (
               <Button
                 component={Link}
                 href={page.href}
@@ -90,7 +90,7 @@ function Footer() {
               >
                 {page.name}
               </Button>
-            ))}
+            ))/*/}
           </Box>
           {/* Follow Us Md-size view */}
           <Box
@@ -135,8 +135,7 @@ function Footer() {
               display="inline"
               textAlign="right"
             >
-              &copy; {new Date().getFullYear()} Qinvicta Inc. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} Copyright© 薩格茲學院著作權所有
             </Typography>
           </Box>
         </Box>
@@ -150,10 +149,10 @@ function Footer() {
             alignItems: "center",
           }}
         >
-          {/*Mobile-size Logo*/}
+          {/*{Mobile-size Logo}
           <Box width="100%" display="flex" justifyContent="center">
             <Image
-              src="/Logo_V_DB.png"
+              src="/logo.png"
               alt="Logo"
               width={250}
               height={150}
@@ -162,7 +161,7 @@ function Footer() {
                 width: "250px",
               }}
             />
-          </Box>
+          </Box>*/}
           {/*Mobile-size Menu */}
           <Box
             sx={{
@@ -172,7 +171,7 @@ function Footer() {
               alignItems: "center",
             }}
           >
-            {pages.map((page) => (
+            {/*pages.map((page) => (
               <Button
                 component={Link}
                 href={page.href}
@@ -190,7 +189,7 @@ function Footer() {
               >
                 {page.name}
               </Button>
-            ))}
+            ))*/}
           </Box>
           {/*Mpbile-size Legal Buttons */}
           <Box>
@@ -210,8 +209,7 @@ function Footer() {
           {/*Mobile-size Copyright Content */}
           <Box>
             <Typography color="#acacac" m={2} textAlign="center">
-              &copy; {new Date().getFullYear()} Qinvicta Inc. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} Copyright© 薩格茲學院著作權所有
             </Typography>
           </Box>
         </Box>

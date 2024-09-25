@@ -19,13 +19,12 @@ import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 const pages = [
-  { name: "首頁", href: "/" },
-  { name: "課程特色", href: "/Course" },
-  { name: "授課模式", href: "/Teaching" },
-  { name: "講師", href: "/Lecturer" },
-  { name: "開班資訊", href: "/Class" },
+  { name: "課程特色", href: "/#skill" },
+  { name: "授課模式", href: "/#mode" },
+  { name: "講師", href: "/#lecturer" },
+  { name: "開班資訊", href: "/#class" },
 ];
-const pages_m = [...pages, { name: "線上諮詢", href: "/Contact" }];
+const pages_m = [...pages, { name: "線上諮詢", href: "/#contact" }];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -135,7 +134,7 @@ function NavBar() {
             {loaded && (
               <Button
                 component={Link}
-                href="/Contact"
+                href="/#contact"
                 sx={{
                   my: 2,
                   color: "white",

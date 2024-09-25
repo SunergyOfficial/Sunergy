@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Link, Typography } from "@mui/material";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
@@ -141,6 +141,7 @@ export default function Banner() {
               解決問題，同時活用英文單字及片語，打造英語科技腦。
             </Typography>
             <Button
+              href="#mode"
               sx={{
                 my: 2,
                 color: "black",

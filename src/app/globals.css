@@ -93,14 +93,14 @@
   width: calc(100% + var(--borderWidth) * 2);
   background: linear-gradient(
     60deg,
-    #000000,
-    #000000,
-    #000000,
+    #EB577B,
+    #EB577B,
+    #EB577B,
     #cacaff,
-    #000000,
-    #000000,
-    #000000,
-    #000000
+    #EB577B,
+    #EB577B,
+    #EB577B,
+    #EB577B
   );
   border-radius: calc(10 * var(--borderWidth));
   z-index: -1;

@@ -26,8 +26,8 @@ const Disclaimer: React.FC = () => {
           Website Disclaimer
         </Typography>
         <Typography variant="body1" paragraph sx={inter.style}>
-          The information provided by Qinvicta Inc. (&quot;we,&quot;
-          &quot;us,&quot; or &quot;our&quot;) on https://qinvicta.com (the
+          The information provided by Sunergy Inc. (&quot;we,&quot;
+          &quot;us,&quot; or &quot;our&quot;) on https://sunergy.com (the
           &quot;Site&quot;) is for general informational purposes only. All
           information on the Site is provided in good faith, however we make no
           representation or warranty of any kind, express or implied, regarding

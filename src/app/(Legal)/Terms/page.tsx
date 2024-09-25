@@ -63,7 +63,7 @@ const Terms: React.FC = () => {
               <Typography variant="body1">
                 <strong>Company</strong> (referred to as either &quot;the
                 Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;
-                in this Agreement) refers to Qinvicta Inc., Florida, US.
+                in this Agreement) refers to Sunergy Inc..
               </Typography>
             </ListItem>
             <ListItem>
@@ -95,9 +95,9 @@ const Terms: React.FC = () => {
             </ListItem>
             <ListItem>
               <Typography variant="body1">
-                <strong>Website</strong> refers to Qinvicta, accessible from{" "}
+                <strong>Website</strong> refers to Sunergy, accessible from{" "}
                 <Link href="/" target="_blank" rel="noopener noreferrer">
-                  https://qinvicta.com/
+                  https://sunergy.com/
                 </Link>
                 .
               </Typography>
@@ -381,7 +381,7 @@ const Terms: React.FC = () => {
           </Typography>
           <Typography variant="body1">
             <Link href="/Contact" target="_blank" rel="noopener noreferrer">
-              https://qinvicta.com/Contact
+              https://sunergy.com/Contact
             </Link>
           </Typography>
         </Box>
